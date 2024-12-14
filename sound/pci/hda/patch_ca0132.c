@@ -1279,16 +1279,16 @@ static const struct hda_pintbl r3di_pincfgs[] = {
 };
 
 static const struct hda_pintbl ae7_pincfgs[] = {
-	{ 0x0b, 0x01017010 },
-	{ 0x0c, 0x014510f0 },
-	{ 0x0d, 0x414510f0 },
-	{ 0x0e, 0x01c520f0 },
-	{ 0x0f, 0x01017114 },
-	{ 0x10, 0x01017011 },
-	{ 0x11, 0x018170ff },
-	{ 0x12, 0x01a170f0 },
-	{ 0x13, 0x908700f0 },
-	{ 0x18, 0x500000f0 },
+	{ 0x0b, 0x01017010 }, /* Port G -- Lineout FRONT L/R */
+	{ 0x0c, 0x014510f0 }, /* SPDIF Out 1 */
+	{ 0x0d, 0x414510f0 }, /* Digital Out */
+	{ 0x0e, 0x01c520f0 }, /* SPDIF In */
+	{ 0x0f, 0x01017114 }, /* Port A -- Rear L/R, PresenceDetectOverride=True */
+	{ 0x10, 0x01017011 }, /* Port D -- Center/LFE or FP Hp */
+	{ 0x11, 0x018170ff }, /* Port B -- LineMicIn2 or BackPanel HP, Line-In */
+	{ 0x12, 0x01a170f0 }, /* Port C -- LineMicIn1, Mic-In and Headset-Mic */
+	{ 0x13, 0x908700f0 }, /* What U Hear In*/
+	{ 0x18, 0x500000f0 }, /* N/A */
 	{}
 };
 
